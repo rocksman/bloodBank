@@ -19,7 +19,7 @@ require('./config/passport')(passport);
 app.use(cookieParser()); // read cookies (needed for auth)
 app.use(bodyParser()); // get information from html forms
 
-app.use(express.static('./bloodAdmin/dist/bloodAdmin')); // set up ejs for templating
+app.use(express.static('./dist/bloodAdmin')); // set up ejs for templating
 
 // // required for passport
 app.use(session({ secret: 'ilovescotchscotchyscotchscotch' })); // session secret
